@@ -108,7 +108,7 @@ SQL queries and views were created to analyze:
 
 ### Sales Analysis
 
-![Sales Dashboard](Images/sales_dashboard.png)
+![Sales Dashboard](https://github.com/chiranjeev-tripathi/vendor-performance-dashboard-/blob/main/POWERBI%20DASHBOARD/Screenshot%202026-07-10%20103840.png)
 
 ### Inventory Analysis
 
