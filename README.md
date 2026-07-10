@@ -112,7 +112,7 @@ SQL queries and views were created to analyze:
 
 ### Inventory Analysis
 
-![Inventory Dashboard](https://github.com/chiranjeev-tripathi/vendor-performance-dashboard-/blob/main/POWERBI%20DASHBOARD/Screenshot%202026-07-10%20103840.png)
+![Inventory Dashboard](https://github.com/chiranjeev-tripathi/vendor-performance-dashboard-/blob/main/POWERBI%20DASHBOARD/Screenshot%202026-07-10%20103859.png)
 
 ---
 
