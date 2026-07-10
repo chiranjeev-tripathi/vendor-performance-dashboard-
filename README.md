@@ -1,186 +1,98 @@
-# 📊 Vendor Performance Dashboard
+#  Vendor Performance Dashboard
 
-> An End-to-End Data Analytics Project built using **Python, SQL Server, and Power BI** to analyze vendor performance, inventory management, purchasing costs, sales trends, and business profitability.
-
-#  Project Overview
-
-The Vendor Performance Dashboard is a Business Intelligence solution designed to help organizations monitor vendor performance, inventory movement, purchasing costs, and sales performance.
-
-The project combines Python for data preprocessing, SQL Server for data exploration and business queries, and Power BI for interactive dashboard development.
-
-The dashboard enables stakeholders to identify:
-
-- Top Performing Vendors
-- Vendor Profitability
-- Sales Trends
-- Inventory Movement
-- Fast & Slow Moving Products
-- Store Performance
-- Purchase Cost Analysis
-- Revenue by Brand
-- Inventory Value Distribution
+An end-to-end **Data Analytics** project built using **Python, SQL Server, and Power BI** to analyze vendor performance, sales trends, and inventory management. The project demonstrates the complete analytics workflow from data cleaning and SQL analysis to interactive Power BI dashboards.
 
 ---
 
-#  Business Problem
+##  Project Overview
 
-Businesses dealing with multiple vendors often struggle to answer questions such as:
+This dashboard helps businesses:
 
-- Which vendors generate the highest revenue?
-- Which vendors are most profitable?
-- Which stores perform the best?
-- Which products remain overstocked?
-- Which products sell the fastest?
-- How much inventory remains after sales?
-- How much money is tied up in inventory?
-- Which brands contribute the highest revenue?
-
-Without proper analytics, these decisions become difficult and inefficient.
-
-This dashboard transforms raw transactional data into actionable business insights.
-
----
-
-#  Objectives
-
-- Analyze vendor-wise revenue
-- Measure vendor profitability
+- Analyze vendor performance
+- Monitor sales trends
+- Track inventory levels
 - Compare store performance
-- Track monthly sales trends
-- Monitor inventory movement
-- Analyze beginning vs ending inventory
-- Identify fast and slow moving products
-- Optimize purchasing decisions
-- Improve inventory planning
+- Support data-driven business decisions
 
 ---
 
-#  Tech Stack
+##  Tech Stack
 
-| Technology | Purpose |
-|------------|----------|
-| Python | Data Cleaning & Transformation |
-| Pandas | Data Processing |
-| NumPy | Data Manipulation |
-| SQL Server | Data Exploration |
-| SQL | Business Queries |
-| Power BI | Dashboard Development |
-| DAX | KPI Calculations |
-| Power Query | Data Transformation |
+- **Python (Pandas, NumPy)** – Data Cleaning & Transformation
+- **SQL Server & SQL** – Data Analysis & Views
+- **Power BI** – Dashboard Development
+- **Power Query & DAX** – Data Modeling & KPI Calculations
 
 ---
 
-#  Dataset Information
+##  Datasets
 
-This project uses **6 datasets**.
+The project uses six datasets:
 
-| Dataset | Description |
-|----------|-------------|
-| Sales | Sales Transactions |
-| Purchases | Purchase Transactions |
-| Purchase Prices | Product Purchase Prices |
-| Vendor Invoice | Vendor Payment Information |
-| Begin Inventory | Opening Inventory |
-| End Inventory | Closing Inventory |
+- Sales
+- Purchases
+- Purchase Prices
+- Vendor Invoice
+- Beginning Inventory
+- Ending Inventory
 
 ---
 
-#  Python Data Cleaning & Transformation
+##  Data Preparation
 
-Python was used to clean and preprocess the raw datasets before importing them into SQL Server.
+Using Python:
 
-### Data Cleaning Steps
+- Removed duplicates and null values
+- Standardized data formats
+- Converted data types
+- Cleaned and transformed datasets
 
-✔ Removed duplicate records
-
-✔ Removed null values
-
-✔ Standardized column names
-
-✔ Converted data types
-
-✔ Parsed date columns
-
-✔ Fixed inconsistent values
-
-✔ Checked data quality
-
-✔ Exported cleaned datasets
-
-Libraries Used
-
-```python
-Pandas
-NumPy
-```
+The cleaned data was imported into SQL Server for analysis.
 
 ---
 
-#  SQL Data Analysis
+##  SQL Analysis
 
-The cleaned datasets were imported into SQL Server.
-
-Several SQL queries and Views were created for business analysis.
-
-Examples include:
+SQL queries and views were created to analyze:
 
 - Vendor Revenue
-- Vendor Profitability
-- Monthly Revenue
 - Store Revenue
-- Inventory Analysis
-- Fast Moving Products
-- Slow Moving Products
-- Vendor Ranking
+- Monthly Revenue
+- Inventory Performance
 - Brand Performance
-- Purchase Cost Analysis
-
-SQL Views were created to improve dashboard performance and simplify reporting.
+- Vendor Ranking
 
 ---
 
-#  Power BI Dashboard
-
-The Power BI report consists of **3 interactive dashboard pages**.
-
----
-
-# Dashboard 1 — Sales Analysis
+#  Dashboard 1 – Sales Analysis
 
 ### KPIs
 
-- Total Revenue
-- Total Gross Value
-- Total Orders
-- Total Quantity Sold
+-  Total Revenue: **64.98M**
+-  Total Gross Value: **2.52M**
+-  Total Orders: **2.884K**
+-  Quantity Sold: **258K**
 
 ### Visuals
 
 - Top Vendors by Revenue
 - Revenue by Store
-- Monthly Revenue Trend
-- Revenue vs Units Sold
-- Interactive Filters
+- Monthly Revenue Trends
+- Revenue vs Units Sold by Brand
 - Sales Transaction Table
-
-### Business Insights
-
-- Identify best-performing vendors
-- Analyze monthly revenue growth
-- Compare store performance
-- Analyze revenue by brand
+- Interactive Filters
 
 ---
 
-#  Dashboard 2 — Inventory Analysis
+#  Dashboard 2 – Inventory Analysis
 
 ### KPIs
 
-- Opening Stock Quantity
-- Closing Stock Quantity
-- Beginning Stock Value
-- Ending Stock Value
-- Total SKUs
+-  Opening Stock Quantity: **446.18K**
+-  Closing Stock Quantity: **2M**
+-  Beginning Stock Value: **6.77M**
+-  Ending Stock Value: **313.83M**
+-  Total SKUs: **5K**
 
 ### Visuals
 
@@ -190,181 +102,45 @@ The Power BI report consists of **3 interactive dashboard pages**.
 - Revenue vs Inventory by Brand
 - Geographic Distribution of Inventory
 
-### Business Insights
+---
 
-- Monitor inventory movement
-- Detect overstock situations
-- Analyze inventory value
-- Compare beginning and ending inventory
+##  Dashboard Screenshots
+
+### Sales Analysis
+
+![Sales Dashboard](Images/sales_dashboard.png)
+
+### Inventory Analysis
+
+![Inventory Dashboard](Images/inventory_dashboard.png)
 
 ---
 
-#  Dashboard 3 — Vendor Performance
+##  Repository Structure
 
-### KPIs
-
-- Vendor Revenue
-- Vendor Profit
-- Purchase Cost
-- Vendor Ranking
-
-### Visuals
-
-- Vendor Revenue
-- Vendor Profitability
-- Vendor Payments
-- Purchase Cost Analysis
-- Vendor Ranking
-
-### Business Insights
-
-- Compare vendor performance
-- Identify high-value vendors
-- Optimize purchasing decisions
-
----
-
-#  Dashboard Screenshots
-
-## Sales Analysis Dashboard
-
-Replace the link below after uploading the image.
-
-```md
-![Sales Dashboard](images/sales_dashboard.png)
-```
-
----
-
-## Inventory Analysis Dashboard
-
-```md
-![Inventory Dashboard](images/inventory_dashboard.png)
-```
-
----
-
-## Vendor Performance Dashboard
-
-```md
-![Vendor Dashboard](images/vendor_dashboard.png)
-```
-
----
-
-#  Repository Structure
-
-```
-Vendor-Performance-Dashboard
+```text
+Vendor-Performance-Dashboard/
 │
-├── Dataset
-│   ├── sales.csv
-│   ├── purchases.csv
-│   ├── purchase_prices.csv
-│   ├── vendor_invoice.csv
-│   ├── begin_inventory.csv
-│   └── end_inventory.csv
-│
-├── Python
-│   ├── Data Cleaning.ipynb
-│   └── Data Cleaning.py
-│
-├── SQL
-│   ├── VendorPerformance.sql
-│   ├── SQL Views.sql
-│   └── Data Exploration.sql
-│
-├── Power BI
-│   └── Vendor Performance Dashboard.pbix
-│
-├── Images
-│   ├── sales_dashboard.png
-│   ├── inventory_dashboard.png
-│   └── vendor_dashboard.png
-│
+├── Dataset/
+├── Python/
+├── SQL/
+├── Power BI/
+├── Images/
 ├── README.md
 └── LICENSE
 ```
 
 ---
 
-#  How to Run the Project
-
-## Step 1
-
-Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Vendor-Performance-Dashboard.git
-```
-
----
-
-## Step 2
-
-Run the Python notebook
-
-```
-Python/Data Cleaning.ipynb
-```
-
----
-
-## Step 3
-
-Import cleaned CSV files into SQL Server.
-
----
-
-## Step 4
-
-Execute all SQL scripts inside
-
-```
-SQL/
-```
-
----
-
-## Step 5
-
-Open
-
-```
-Vendor Performance Dashboard.pbix
-```
-
-using Power BI Desktop.
-
----
-
-#  Key Business Insights
-
-- Top vendors contribute a significant portion of overall revenue.
-- Inventory is unevenly distributed across stores.
-- Certain products remain overstocked for extended periods.
-- Monthly sales exhibit seasonal fluctuations.
-- Some vendors generate high revenue but lower profitability due to higher purchasing costs.
-- Geographic visualization highlights inventory concentration across regions.
-
----
-
-#  Skills Demonstrated
+##  Key Skills
 
 - Data Cleaning
-- Exploratory Data Analysis
 - SQL
-- SQL Views
 - Power BI
-- Power Query
 - DAX
+- Power Query
 - Data Modeling
-- Dashboard Design
+- Data Visualization
 - Business Intelligence
-- Inventory Analytics
-- Vendor Performance Analysis
 
 ---
-
-
-
